@@ -6,9 +6,9 @@ function makeid(l) {
 	let arr = [num,alp,capal]
 	let str = ""
 	for(let i=0;i<l;i++){
-		let ind = Math.random()*3
+		let ind = parseInt(Math.random()*3)
 		let dig = arr[ind]
-		str+=dig[Math.random()*dig.length]
+		str+=dig[parseInt(Math.random()*dig.length)]
 	}
 	return str
 }
